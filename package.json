@@ -2,7 +2,7 @@
   "name": "typescript-mongoose",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "Vlado Tešanović",
+  "author": "Zaid Sallam",
   "engines": {
     "node": "8.9.1",
     "npm": "5.2.0"
