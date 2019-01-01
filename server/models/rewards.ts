@@ -1,0 +1,33 @@
+import { mongoose } from "../config/database";
+import { Document, Model, Schema } from "mongoose";
+import { Rewards } from '../interfaces/reward-interface';
+var ObjectId = mongoose.Schema.Types.ObjectId;
+
+const schema = new Schema({  // المكافأت
+
+    employee: { type: ObjectId, ref: 'employees' },
+    by_employee: { type: ObjectId, ref: 'employees' },
+    status: { type: ObjectId, ref: 'statuses' },
+    amount: { type: Number },
+    notes: { type: String },
+    request_date: { type: Number, "default": 0  },
+    approved_by: { type: ObjectId, ref: 'employees', default: null },
+    created_at: { type: Date, "default": Date.now },
+    updated_at: { type: Date, "default": null },
+    deleted_at: { type: Date, "default": null }
+
+}, { versionKey: false });
+
+export const rewards = mongoose.model<Rewards>("rewards", schema);
+
+
+
+
+
+
+
+
+
+
+
+

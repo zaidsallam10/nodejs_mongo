@@ -1,0 +1,85 @@
+* add status id on deductions and raises and ....etc
+* add/edit/delete dedsuton raises ....etc
+* if deleted_at == date of raises or deductions or ... etc dont show it in 
+/employees/id/details ===>  done
+/employees/id/   ===>  done
+* company/id/departments ===> done
+*company/id/positions ===> done
+-joined date  ===> done
+- after create new employee create new record in the users table and set the user_id in the employee table ===> done
+-order created_at in the deductions (less to greater asch) ======> done 
+-order created_at in the rasies(less to greater asch) ======> done 
+-order created_at in the rewards(less to greater asch) ======> done 
+-order created_at in the leaves(less to greater asch) ======> done 
+- user type in the users table instead of emloyee table ===> done
+- when add deduction the resolve should be contain all deducations with the new deduction ===> done 
+- when add raise the resolve should be contain all raises with the new raise ===> done 
+- when add reward the resolve should be contain all rewards with the new reward===> done 
+- when add leave the resolve should be contain all leaves with the new leave===> done 
+- when add leave the resolve should be contain all leaves with the new leave===> done 
+- edit and delete vacations ===> done
+- add new statuses (int not objectID) ==> done
+- api to change the statuses for leaves  ==>done
+- api to change the statuses for vacations ==>done
+- api to change the statuses for deductions ==>done
+- api to change the statuses for raises	    ==>done
+- api to change the statuses for rewards ==>done
+-create table called company_configs ==> done
+- department only specefic data ==>done
+- nationality (id) ====> done
+- id number (ÑŞã ÇáåæíÉ)  ====> done
+- majors and dagess ====> done
+
+-what the action on every status from finger print based on the policies in the company configs ==>done
+- when take an action set the date of the current action with the startworkingtime/endworkingtime from configs ==>done
+
+=================
+
+
+
+
+- payrolled contain all tranasctions (total_deduction,reaises,,,,,etc) (( only the approved ))'
+- after call payrolls api should be update status all transactions to payrolled !!!
+- when delete anything ("check if is exists in another place")
+
+- validation if exists the data from file
+- token when login
+
+- raise (approved) increase to salary 
+- old salary (before this raise) in the raises table
+
+-all deduction /rewards / vacations/ leaves for all employees when ÊÑÍíá ÑæÇÊÈ áÔåÑ ãÚíä
+-all finger print data deduct from salary (only between the start )
+-personal leaves when when the employee comes late (in the enum)
+
+payroald :
+
+// company details and his subscription and his users ===> done
+// full api for licenses and subscriptions =====> done
+// reset password =====> done
+// generate passwords and return them to our users =====> done
+
+// roles to users (priviliges) 
+// by default trial subscription to all our companies
+// get user by id /(return his company and his subscription)
+
+// when the company try to add employee/user check on the used users and used employees
+// payment structure
+// token ===> done
+
+// after create company auto create config for that company and the company cant only uppdate it not create it
+
+
+user conroller ==> creeate check it so far
+
+===================
+
+
+*features :--
+
+1- request_histories : contain request_id , status_id , created_at
+
+
+
+
+
